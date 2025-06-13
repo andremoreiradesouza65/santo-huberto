@@ -2,222 +2,135 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Clube de Caça e Tiro Santo Huberto</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galeria - Santo Huberto</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
 
 </head>
 <body>
-
-<header class="header">
-  <div class="header-container">
-    <img src="logo sem fundo.png" alt="Logo do Clube Santo Huberto" class="logo" />
-    <h1>Clube de Caça e Tiro Santo Huberto</h1>
+  <div class="logo-intro">
+    <img src="logo sem fundo.png" alt="Logo Santo Huberto">
   </div>
-</header>
 
-<main class="main-content">
+ <header class="site-header">
+    <div class="header-container">
+      <img src="logo sem fundo.png" alt="Logo Santo Huberto" class="logo-elegante">
+      <h1 class="titulo-elegante">Clube de Caça e Tiro Santo Huberto</h1>
+    </div>
+  </header>
 
-    <section id="sobre-nos" class="section about-us">
-  <h2>Sobre Nós</h2>
-  <p>
-    Somos um clube dedicado a proporcionar a melhor experiência em atividades de tiro, social e eventos exclusivos. 
-    Nosso compromisso é com a segurança, diversão e o fortalecimento da comunidade.
-  </p>
+
+<section class="sobre-nos" id="sobre">
+  <div class="sobre-fundo">
+    <div class="sobre-overlay">
+      <h2>Sobre Nós</h2>
+      <p>Bem-vindo ao Santo Huberto. Somos apaixonados por esportes de tiro, natureza e tradição. Nossa missão é proporcionar experiências únicas, seguras e inesquecíveis.</p>
+      <a href="#" class="btn-associado">Seja Associado</a>
+    </div>
+  </div>
 </section>
 
 
-  <section class="section entrada">
+
+  <!-- NOVA SEÇÃO: Entrada -->
+  <section class="galeria">
     <h2>Entrada</h2>
-    <div class="gallery">
-      <div class="photo">
-        <img src="Guarapuava.jpeg" alt="Entrada 1" onclick="openModal(this)">
-        <p class="caption">Santo Huberto Guarapuava</p>
-      </div>
-      <div class="photo">
-        <img src="Entre Rios.jpeg" alt="Entrada 2" onclick="openModal(this)">
-        <p class="caption">Santo Huberto Entre Rios</p>
-      </div>
+    <div class="carousel">
+      <div class="carousel-item active"><img src="Guarapuava.jpeg" alt="Entrada 1" /><div class="caption">Guarapuava</div></div>
+      <div class="carousel-item"><img src="Entre Rios.jpeg" alt="Entrada 2" /><div class="caption">Entre Rios</div></div>
     </div>
+    <button class="carousel-button prev">&#8592;</button>
+    <button class="carousel-button next">&#8594;</button>
   </section>
 
-  <section class="section armeria">
+  <!-- Seções existentes -->
+  <section class="galeria">
     <h2>Armeria</h2>
-    <div class="gallery">
-      <div class="photo">
-        <img src="arma 1.jpeg" alt="Armeria 1" onclick="openModal(this)" />
-        
-      </div>
-      <div class="photo">
-        <img src="arma 6.jpeg" alt="Armeria 2" onclick="openModal(this)" />
-       
-      </div>
-      <div class="photo">
-        <img src="arma 3.jpeg" alt="Armeria 3" onclick="openModal(this)" />
-        
-      </div>
-      <div class="photo">
-        <img src="arma 4.jpeg" alt="Armeria 4" onclick="openModal(this)" />
-        
-      </div>
-      <div class="photo">
-        <img src="arma 5.jpeg" alt="Armeria 5" onclick="openModal(this)" />
-    
-      </div>
+    <div class="carousel">
+      <div class="carousel-item active"><img src="arma 2.jpeg" alt="Foto 1" /><div class="caption"></div></div>
+      <div class="carousel-item"><img src="arma 1.jpeg" alt="Foto 2" /><div class="caption"></div></div>
+      <div class="carousel-item"><img src="arma 2.jpeg" alt="Foto 3" /><div class="caption"></div></div>
+      <div class="carousel-item"><img src="arma 3.jpeg" alt="Foto 4" /><div class="caption"></div></div>
+      <div class="carousel-item"><img src="arma 4.jpeg" alt="Foto 5" /><div class="caption"></div></div>
     </div>
+    <button class="carousel-button prev">&#8592;</button>
+    <button class="carousel-button next">&#8594;</button>
   </section>
 
-  <section class="section cursos">
+  <section class="galeria">
     <h2>Cursos</h2>
-    <div class="gallery">
-      <div class="photo">
-        <img src="curso 1.jpeg" alt="Curso 1" onclick="openModal(this)">
-        <p class="caption">falar sobre o curso</p>
-      </div>
-      <div class="photo">
-        <img src="curso2.jpg" alt="Curso 2" onclick="openModal(this)">
-        <p class="caption">falar sobre o curso</p>
-      </div>
-      <div class="photo">
-        <img src="curso3.jpg" alt="Curso 3" onclick="openModal(this)">
-        <p class="caption">falar sobre o curso</p>
-      </div>
-      <div class="photo">
-        <img src="curso4.jpg" alt="Curso 4" onclick="openModal(this)">
-        <p class="caption">falar sobre o curso</p>
-      </div>
-      <div class="photo">
-        <img src="curso5.jpg" alt="Curso 5" onclick="openModal(this)">
-        <p class="caption">falar sobre o curso</p>
-      </div>
+    <div class="carousel">
+      <div class="carousel-item active"><img src="curso1.jpg" alt="Curso 1" /><div class="caption">Curso 1</div></div>
+      <div class="carousel-item"><img src="curso 1.jpeg" alt="Curso 2" /><div class="caption">Curso 2</div></div>
+      <div class="carousel-item"><img src="curso3.jpg" alt="Curso 3" /><div class="caption">Curso 3</div></div>
+      <div class="carousel-item"><img src="curso4.jpg" alt="Curso 4" /><div class="caption">Curso 4</div></div>
+      <div class="carousel-item"><img src="curso5.jpg" alt="Curso 5" /><div class="caption">Curso 5</div></div>
     </div>
+    <button class="carousel-button prev">&#8592;</button>
+    <button class="carousel-button next">&#8594;</button>
   </section>
 
-  <section class="section pistas-de-tiro">
+  <section class="galeria">
     <h2>Pistas de Tiro</h2>
-    <div class="gallery">
-      <div class="photo">
-        <img src="pista 1.jpeg" alt="Pista 1" onclick="openModal(this)" />
-        <p class="caption">falar sobre a pista</p>
-      </div>
-      <div class="photo">
-        <img src="pista 2.jpeg" alt="Pista 2" onclick="openModal(this)" />
-        <p class="caption">falar sobre a pista</p>
-      </div>
-      <div class="photo">
-        <img src="pista 3.jpeg" alt="Pista 3" onclick="openModal(this)" />
-        <p class="caption">falar sobre a pista</p>
-      </div>
-      <div class="photo">
-        <img src="pista4.jpg" alt="Pista 4" onclick="openModal(this)" />
-        <p class="caption">falar sobre a pista</p>
-      </div>
-      <div class="photo">
-        <img src="pista5.jpg" alt="Pista 5" onclick="openModal(this)" />
-        <p class="caption">falar sobre a pista</p>
-      </div>
+    <div class="carousel">
+      <div class="carousel-item active"><img src="pista1.jpg" alt="Pista 1" /><div class="caption">Pista 1</div></div>
+      <div class="carousel-item"><img src="pista 1.jpeg" alt="Pista 2" /><div class="caption">Pista 2</div></div>
+      <div class="carousel-item"><img src="pista 2.jpeg" alt="Pista 3" /><div class="caption">Pista 3</div></div>
+      <div class="carousel-item"><img src="pista 3.jpeg" alt="Pista 4" /><div class="caption">Pista 4</div></div>
+      <div class="carousel-item"><img src="pista5.jpg" alt="Pista 5" /><div class="caption">Pista 5</div></div>
     </div>
+    <button class="carousel-button prev">&#8592;</button>
+    <button class="carousel-button next">&#8594;</button>
   </section>
 
-  <section class="section area-social">
+  <section class="galeria">
     <h2>Área Social</h2>
-    <div class="gallery">
-      <div class="photo">
-        <img src="social 1.jpeg" alt="Social 1" onclick="openModal(this)" />
-        
-      </div>
-      <div class="photo">
-        <img src="social 2.jpeg" alt="Social 2" onclick="openModal(this)" />
-        
-      </div>
-      <div class="photo">
-        <img src="social 3.jpeg" alt="Social 3" onclick="openModal(this)" />
-        
-      </div>
-      <div class="photo">
-        <img src="social 4.jpeg" alt="Social 4" onclick="openModal(this)" />
-        
-      </div>
-      <div class="photo">
-        <img src="social 5.jpeg" alt="Social 5" onclick="openModal(this)" />
-        
-      </div>
+    <div class="carousel">
+      <div class="carousel-item active"><img src="social 5.jpeg" alt="Social 1" /><div class="caption">Social 1</div></div>
+      <div class="carousel-item"><img src="social 1.jpeg" alt="Social 2" /><div class="caption">Social 2</div></div>
+      <div class="carousel-item"><img src="social 2.jpeg" alt="Social 3" /><div class="caption">Social 3</div></div>
+      <div class="carousel-item"><img src="social 3.jpeg" alt="Social 4" /><div class="caption">Social 4</div></div>
+      <div class="carousel-item"><img src="social 4.jpeg" alt="Social 5" /><div class="caption">Social 5</div></div>
     </div>
+    <button class="carousel-button prev">&#8592;</button>
+    <button class="carousel-button next">&#8594;</button>
   </section>
 
-  <section class="section viagens-de-caca">
+  <section class="galeria">
     <h2>Viagens de Caça</h2>
-    <div class="gallery">
-      <div class="photo">
-        <img src="viagem1.jpg" alt="Viagem 1" onclick="openModal(this)">
-        <p class="caption">falar sobre a viagem</p>
-      </div>
-      <div class="photo">
-        <img src="viagem2.jpg" alt="Viagem 2" onclick="openModal(this)">
-        <p class="caption">falar sobre a viagem</p>
-      </div>
-      <div class="photo">
-        <img src="viagem3.jpg" alt="Viagem 3" onclick="openModal(this)">
-        <p class="caption">falar sobre a viagem</p>
-      </div>
-      <div class="photo">
-        <img src="viagem4.jpg" alt="Viagem 4" onclick="openModal(this)">
-        <p class="caption">falar sobre a viagem</p>
-      </div>
-      <div class="photo">
-        <img src="viagem5.jpg" alt="Viagem 5" onclick="openModal(this)">
-        <p class="caption">falar sobre a viagem</p>
-      </div>
+    <div class="carousel">
+      <div class="carousel-item active"><img src="caca1.jpg" alt="Caça 1" /><div class="caption">Caça 1</div></div>
+      <div class="carousel-item"><img src="caca2.jpg" alt="Caça 2" /><div class="caption">Caça 2</div></div>
+      <div class="carousel-item"><img src="caca3.jpg" alt="Caça 3" /><div class="caption">Caça 3</div></div>
+      <div class="carousel-item"><img src="caca4.jpg" alt="Caça 4" /><div class="caption">Caça 4</div></div>
+      <div class="carousel-item"><img src="caca5.jpg" alt="Caça 5" /><div class="caption">Caça 5</div></div>
     </div>
+    <button class="carousel-button prev">&#8592;</button>
+    <button class="carousel-button next">&#8594;</button>
   </section>
 
-</main>
+  <script src="script.js" defer></script>
 
-<footer class="footer">
-  <div class="social-icons">
-    <a href="https://instagram.com" target="_blank" aria-label="Instagram">
-      <i class="fab fa-instagram"></i>
-    </a>
-    <a href="https://www.facebook.com/clubedecacaetirosantohuberto/?locale=pt_BR" target="_blank" aria-label="Facebook">
-      <i class="fab fa-facebook"></i>
-    </a>
-    <a href="https://wa.me/55SEUNUMERO" target="_blank" aria-label="WhatsApp">
-      <i class="fab fa-whatsapp"></i>
-    </a>
-  </div>
-  <p>&copy; 2025 Clube de Tiro Santo Huberto. Todos os direitos reservados.</p>
-</footer>
-
-
-<!-- Modal da imagem ampliada -->
-<div id="image-modal" onclick="closeModal(event)">
-  <button class="close-btn" aria-label="Fechar imagem ampliada" onclick="closeModal(event)">×</button>
-  <img src="" alt="Imagem ampliada" id="modal-img" />
-  <p id="modal-caption"></p>
+ <!-- Modal de imagem ampliada -->
+<div id="imageModal" class="modal">
+  <span class="close-modal" id="closeModal">&times; Voltar</span>
+  <img class="modal-content" id="modalImage">
 </div>
 
-<script>
-  function openModal(imgElement) {
-    const modal = document.getElementById('image-modal');
-    const modalImg = document.getElementById('modal-img');
-    const modalCaption = document.getElementById('modal-caption');
-    modal.style.display = 'flex';
-    modalImg.src = imgElement.src;
-    modalImg.alt = imgElement.alt;
-    // Pega a legenda que está na mesma div
-    const captionText = imgElement.parentElement.querySelector('.caption')?.innerText || '';
-    modalCaption.innerText = captionText;
-  }
-
-  function closeModal(event) {
-    if(event.target.id === 'modal-img') return; // não fecha se clicar na imagem
-    document.getElementById('image-modal').style.display = 'none';
-  }
-</script>
-
-
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-icons">
+      <a href="https://instagram.com/seuperfil" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://facebook.com/seupagina" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://wa.me/55SEUNUMERO" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <div class="footer-text">
+      © 2025 Santo Huberto. Todos os direitos reservados.
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>
