@@ -10,9 +10,16 @@
 
 </head>
 <body>
-  <div class="logo-intro">
-    <img src="logo sem fundo.png" alt="Logo Santo Huberto">
-  </div>
+  <audio id="musicaFundo" src="Luke Bryan - Huntin’, Fishin’, And Lovin’ Every Day (Official Music Video).mp3" preload="auto" loop autoplay></audio>
+
+<!-- Botão de som -->
+<button id="muteButton"><i class="fas fa-volume-up"></i></button>
+
+  
+  <div class="logo-intro">
+    <img src="logo sem fundo.png" alt="Logo Santo Huberto">
+        <button id="botaoEntrar" style="display: none;">Entrar</button>
+  </div>
 
 <header class="site-header-grande">
   <div class="header-logo-central">
@@ -26,7 +33,7 @@
   <div class="sobre-fundo">
     <div class="sobre-overlay">
       <h2>Sobre Nós</h2>
-      <p>Bem-vindo ao Santo Huberto. Somos apaixonados por esportes de tiro, natureza e tradição. Nossa missão é proporcionar experiências únicas, seguras e inesquecíveis.</p>
+      <p>Bem-vindo ao Santo Huberto. Somos apaixonados pelo esportes de tiro, natureza e tradição. Nossa missão é proporcionar experiências únicas, seguras e inesquecíveis.</p>
       <a href="#" class="btn-associado">Seja Associado</a>
     </div>
   </div>
@@ -36,7 +43,7 @@
 
   <!-- NOVA SEÇÃO: Entrada -->
   <section class="galeria">
-    <h2>Entrada</h2>
+    <h2>Nosaas Estruturas</h2>
     <div class="carousel">
       <div class="carousel-item active"><img src="Guarapuava.jpeg" alt="Entrada 1" /><div class="caption">Guarapuava</div></div>
       <div class="carousel-item"><img src="Entre Rios.jpeg" alt="Entrada 2" /><div class="caption">Entre Rios</div></div>
@@ -53,7 +60,6 @@
       <div class="carousel-item"><img src="arma 1.jpeg" alt="Foto 2" /><div class="caption"></div></div>
       <div class="carousel-item"><img src="arma 2.jpeg" alt="Foto 3" /><div class="caption"></div></div>
       <div class="carousel-item"><img src="arma 3.jpeg" alt="Foto 4" /><div class="caption"></div></div>
-      <div class="carousel-item"><img src="arma 4.jpeg" alt="Foto 5" /><div class="caption"></div></div>
     </div>
     <button class="carousel-button prev">&#8592;</button>
     <button class="carousel-button next">&#8594;</button>
@@ -63,49 +69,22 @@
     <h2>Cursos</h2>
     <div class="carousel">
       <div class="carousel-item active"><img src="curso1.jpg" alt="Curso 1" /><div class="caption">Curso 1</div></div>
-      <div class="carousel-item"><img src="curso 1.jpeg" alt="Curso 2" /><div class="caption">Curso 2</div></div>
+      <div class="carousel-item"><img src="curso 2.jpg" alt="Curso 2" /><div class="caption">Curso 2</div></div>
       <div class="carousel-item"><img src="curso3.jpg" alt="Curso 3" /><div class="caption">Curso 3</div></div>
       <div class="carousel-item"><img src="curso4.jpg" alt="Curso 4" /><div class="caption">Curso 4</div></div>
-      <div class="carousel-item"><img src="curso5.jpg" alt="Curso 5" /><div class="caption">Curso 5</div></div>
     </div>
     <button class="carousel-button prev">&#8592;</button>
     <button class="carousel-button next">&#8594;</button>
   </section>
 
-  <section class="galeria">
-    <h2>Pistas de Tiro</h2>
-    <div class="carousel">
-      <div class="carousel-item active"><img src="pista1.jpg" alt="Pista 1" /><div class="caption">Pista 1</div></div>
-      <div class="carousel-item"><img src="pista 1.jpeg" alt="Pista 2" /><div class="caption">Pista 2</div></div>
-      <div class="carousel-item"><img src="pista 2.jpeg" alt="Pista 3" /><div class="caption">Pista 3</div></div>
-      <div class="carousel-item"><img src="pista 3.jpeg" alt="Pista 4" /><div class="caption">Pista 4</div></div>
-      <div class="carousel-item"><img src="pista5.jpg" alt="Pista 5" /><div class="caption">Pista 5</div></div>
-    </div>
-    <button class="carousel-button prev">&#8592;</button>
-    <button class="carousel-button next">&#8594;</button>
-  </section>
 
   <section class="galeria">
-    <h2>Área Social</h2>
+    <h2>Caça</h2>
     <div class="carousel">
-      <div class="carousel-item active"><img src="social 5.jpeg" alt="Social 1" /><div class="caption">Social 1</div></div>
-      <div class="carousel-item"><img src="social 1.jpeg" alt="Social 2" /><div class="caption">Social 2</div></div>
-      <div class="carousel-item"><img src="social 2.jpeg" alt="Social 3" /><div class="caption">Social 3</div></div>
-      <div class="carousel-item"><img src="social 3.jpeg" alt="Social 4" /><div class="caption">Social 4</div></div>
-      <div class="carousel-item"><img src="social 4.jpeg" alt="Social 5" /><div class="caption">Social 5</div></div>
-    </div>
-    <button class="carousel-button prev">&#8592;</button>
-    <button class="carousel-button next">&#8594;</button>
-  </section>
-
-  <section class="galeria">
-    <h2>Viagens de Caça</h2>
-    <div class="carousel">
-      <div class="carousel-item active"><img src="caca1.jpg" alt="Caça 1" /><div class="caption">Caça 1</div></div>
-      <div class="carousel-item"><img src="caca2.jpg" alt="Caça 2" /><div class="caption">Caça 2</div></div>
-      <div class="carousel-item"><img src="caca3.jpg" alt="Caça 3" /><div class="caption">Caça 3</div></div>
-      <div class="carousel-item"><img src="caca4.jpg" alt="Caça 4" /><div class="caption">Caça 4</div></div>
-      <div class="carousel-item"><img src="caca5.jpg" alt="Caça 5" /><div class="caption">Caça 5</div></div>
+      <div class="carousel-item active"><img src="caça 1.jpg" alt="Caça 1" /><div class="caption">Caça 1</div></div>
+      <div class="carousel-item"><img src="caça 2.jpg" alt="Caça 2" /><div class="caption">Caça 2</div></div>
+      <div class="carousel-item"><img src="caça 3.jpg" alt="Caça 3" /><div class="caption">Caça 3</div></div>
+      <div class="carousel-item"><img src="caça 4.jpg" alt="Caça 4" /><div class="caption">Caça 4</div></div>
     </div>
     <button class="carousel-button prev">&#8592;</button>
     <button class="carousel-button next">&#8594;</button>
@@ -122,15 +101,34 @@
 <footer class="site-footer">
   <div class="footer-content">
     <div class="footer-icons">
-      <a href="https://instagram.com/seuperfil" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-      <a href="https://facebook.com/seupagina" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://wa.me/55SEUNUMERO" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.instagram.com/clubes.santohuberto/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/clubedecacaetirosantohuberto/?locale=pt_BR" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://wa.me/5542998451267" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
     </div>
     <div class="footer-text">
       © 2025 Santo Huberto. Todos os direitos reservados.
     </div>
   </div>
 </footer>
+
+<script>
+  const musica = document.getElementById('musicaFundo');
+  const muteButton = document.getElementById('muteButton');
+  const muteIcon = muteButton.querySelector('i');
+
+  muteButton.addEventListener('click', () => {
+    musica.muted = !musica.muted;
+    muteIcon.className = musica.muted ? 'fas fa-volume-mute' : 'fas fa-volume-up';
+  });
+
+  // Inicia música no clique (caso bloqueado pelo navegador)
+  document.addEventListener('click', () => {
+    if (musica.paused) {
+      musica.play().catch(() => console.log("Autoplay bloqueado"));
+    }
+  }, { once: true });
+</script>
+
 
 </body>
 </html>

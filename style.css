@@ -818,7 +818,7 @@ section {
 }
 
 .sobre-overlay {
-  background-image: url('curso\ 1.jpeg');
+  background-image: url('social\ 5.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -929,6 +929,154 @@ section {
   max-height: 150px;
 }
 
+#muteButton {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  background: linear-gradient(145deg, #ff6600, #cc5200);
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  z-index: 9999;
+  box-shadow: 0 0 6px rgba(255, 102, 0, 0.5);
+  transition: all 0.3s ease;
+  animation: none;
+}
 
+#muteButton:hover {
+  background: linear-gradient(145deg, #ff8533, #e65c00);
+  box-shadow: 0 0 15px rgba(255, 102, 0, 0.9);
+  transform: scale(1.1);
+  animation: pulse 2s infinite;
+}
 
+/* Modal com várias imagens */
+.estrutura-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.9);
+  overflow: auto;
+}
+
+.estrutura-modal-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+
+.estrutura-modal-content img {
+  max-width: 100%;
+  height: auto;
+  max-height: 80vh;
+  cursor: default;
+  border-radius: 10px;
+}
+
+.estrutura-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.estrutura-close:hover {
+  color: #ccc;
+}
+
+/* Mobile: mostra uma imagem por vez com setas */
+@media (max-width: 768px) {
+  .estrutura-modal-content {
+    flex-wrap: nowrap;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .estrutura-modal-content img {
+    flex-shrink: 0;
+    width: 100%;
+    max-height: 70vh;
+  }
+
+  .estrutura-prev, .estrutura-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 36px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10000;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50%;
+  }
+
+  .estrutura-prev {
+    left: 10px;
+  }
+
+  .estrutura-next {
+    right: 10px;
+  }
+}
+
+.estrutura-container {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.estrutura-carousel {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  max-width: 100%;
+  scroll-behavior: smooth;
+}
+
+.estrutura-carousel .carousel-item {
+  min-width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.6);
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 2;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+
+@media (max-width: 768px) {
+  .carousel-button {
+    font-size: 20px;
+    padding: 6px;
+  }
+}
 
