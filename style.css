@@ -823,8 +823,8 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  max-width: 600px;
-  padding: 2rem;
+  max-width: 700px; /* Aumentei a largura máxima */
+  padding: 3rem; /* Mais espaçamento interno */
   border-radius: 12px;
   text-align: center;
   color: #fff;
@@ -836,26 +836,27 @@ section {
 }
 
 .sobre-overlay h2 {
-  font-size: 2rem;
+  font-size: 2.5rem; /* Título maior */
   margin-bottom: 1rem;
   color: #ff6600;
   font-weight: bold;
 }
 
 .sobre-overlay p {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
+  font-size: 1.3rem; /* Texto maior */
+  line-height: 1.8;
+  margin-bottom: 2rem;
   color: #fff;
 }
 
 .btn-associado {
   background-color: #ff6600cc;
   color: #fff;
-  padding: 0.6rem 1.2rem;
-  border-radius: 20px;
+  padding: 0.8rem 1.5rem; /* Botão maior */
+  border-radius: 25px;
   text-decoration: none;
   font-weight: bold;
+  font-size: 1.1rem;
   transition: background 0.3s ease;
 }
 
